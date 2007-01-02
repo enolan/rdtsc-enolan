@@ -1,0 +1,28 @@
+Name:           rdtsc
+Version:        0.1
+License:        GPL
+License-file:   COPYING
+Author:         Martin Grabmueller <magr@cs.tu-berlin.de>
+Maintainer:     magr@cs.tu-berlin.de
+Homepage:       http://uebb.cs.tu-berlin.de/~magr/projects/rdtsc/
+Category:       Timing, Profiling
+Synopsis:       Binding for the rdtsc machine instruction
+Description:	This module provides the function "rdtsc" for accessing
+	the rdtsc machine register on modern IA-32 processors.  This is
+	a 64-bit counter which counts the number of processor cycles since
+	the machine has been powered up.  Using this instruction, you can
+	make very precise time measurements which are independent of the
+	actual CPU frequency.  But note that you can get strange results
+	sometimes on a superscalar processor.
+	.
+	Also note that the Haskell foreign function interface imposes some
+	additional overheads.  On my machine, it takes about 950 cycles to
+	call this function twice and to compute the difference, whereas in
+	C the overhead is only about 84 cycles.
+Stability:      Experimental
+Build-depends:  base
+Exposed-Modules: Rdtsc.Rdtsc
+Extensions:     ForeignFunctionInterface
+C-sources:	Rdtsc/rdtsc.c
+Include-dirs:   Rdtsc
+Install-includes: rdtsc.h

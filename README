@@ -1,0 +1,32 @@
+                                                              -*-outline-*-
+* README file for Rdtsc binding
+
+This small Cabal package provides a Haskell binding to the "rdtsc"
+machine instruction on modern IA-32 processors.  This instruction can
+be used to read the number of cycles since processor startup and gives
+very accurate timing information.
+
+** Usage
+
+Use
+
+  runghc Setup.hs configure
+  runghc Setup.hs build
+  runghc Setup.hs install
+
+for building and installing system-wide, or
+
+  runghc Setup.hs configure --prefix=$HOME/haskell-modules
+  runghc Setup.hs build
+  runghc Setup.hs install --user
+
+for building and installing in directory $HOME/haskell-modules.
+
+Just import module "Rdtsc.Rdtsc" into your Haskell file and use
+
+  ghc --make FILENAME
+
+to compile your program.
+
+Happy Haskell hacking,
+  Martin
