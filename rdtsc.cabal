@@ -1,5 +1,5 @@
 Name:           rdtsc
-Version:        0.1
+Version:        1.0
 License:        GPL
 License-file:   COPYING
 Author:         Martin Grabmueller <magr@cs.tu-berlin.de>
@@ -7,8 +7,8 @@ Maintainer:     magr@cs.tu-berlin.de
 Homepage:       http://uebb.cs.tu-berlin.de/~magr/projects/rdtsc/
 Category:       Timing, Profiling
 Synopsis:       Binding for the rdtsc machine instruction
-Description:	This module provides the function "rdtsc" for accessing
-	the rdtsc machine register on modern IA-32 processors.  This is
+Description:	This module provides the function 'rdtsc' for accessing
+	the 'rdtsc' machine register on modern IA-32 processors.  This is
 	a 64-bit counter which counts the number of processor cycles since
 	the machine has been powered up.  Using this instruction, you can
 	make very precise time measurements which are independent of the

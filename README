@@ -28,5 +28,8 @@ Just import module "Rdtsc.Rdtsc" into your Haskell file and use
 
 to compile your program.
 
+The "tests" directory contains a small test program for the module and
+demonstrates its usage.
+
 Happy Haskell hacking,
   Martin
