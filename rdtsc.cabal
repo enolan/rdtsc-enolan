@@ -4,7 +4,7 @@ License:            GPL
 License-file:       COPYING
 Author:             Martin Grabmueller <magr@cs.tu-berlin.de>
 Maintainer:         magr@cs.tu-berlin.de
-Homepage:           http://uebb.cs.tu-berlin.de/~magr/projects/rdtsc/
+Homepage:           http://uebb.cs.tu-berlin.de/~magr/projects/rdtsc/doc/
 Category:           Timing, Profiling
 Synopsis:           Binding for the rdtsc machine instruction
 Description:	    This module provides the function 'rdtsc' for accessing
