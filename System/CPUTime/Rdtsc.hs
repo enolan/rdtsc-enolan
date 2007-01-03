@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------
 -- |
--- Module:     Rdtsc.Rdtsc
+-- Module:     System.CPUTime.Rdtsc
 -- Copyright:  (c) 2006-2007 Martin Grabmueller
 -- License:    GPL
 -- 
@@ -24,7 +24,7 @@
 -- >   t2 <- rdtsc
 -- >   putStrLn ("Cost of rdtsc (ffi call):    " ++ show (t2 - t1))
 --------------------------------------------------------------------------
-module Rdtsc.Rdtsc(rdtsc) where
+module System.CPUTime.Rdtsc(rdtsc) where
 
 import Foreign
 
