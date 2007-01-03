@@ -1,5 +1,5 @@
 GHC=ghc
-GHCFLAGS=-fglasgow-exts -i../..
+GHCFLAGS=-O -fglasgow-exts -i../..
 
 CC=gcc
 CFLAGS=-O2
@@ -10,10 +10,10 @@ rdtsc_haskell: TestRdtsc.hs
 	$(GHC) $(GHCFLAGS) --make -o $@ $<
 
 rdtsc_c: test_rdtsc.c rdtsc.o
-	$(CC) $(CFLAGS) -o $@ -I../Rdtsc test_rdtsc.c rdtsc.o
+	$(CC) $(CFLAGS) -o $@ -I../cbits test_rdtsc.c rdtsc.o
 
-rdtsc.o: ../Rdtsc/rdtsc.c ../Rdtsc/rdtsc.h
-	$(CC) $(CFLAGS) -c -I../Rdtsc $<
+rdtsc.o: ../cbits/rdtsc.c ../cbits/rdtsc.h
+	$(CC) $(CFLAGS) -c -I../cbits $<
 
 clean:
 	rm -f *.o *.hi
