@@ -32,4 +32,10 @@ import Foreign
 -- is called on has been powered up.  Note that the value returned
 -- may be inaccurate if the program is run on some hardware
 -- virtualization layer.
+--
+-- Especially on multi-core processors and when using hibernating
+-- operating systems, the values returned may be bogus.
+--
+-- For more information about the @rdtsc@ instruction, see 
+-- <http://en.wikipedia.org/wiki/RDTSC>
 foreign import ccall unsafe "rdtsc.h" rdtsc :: IO Word64
