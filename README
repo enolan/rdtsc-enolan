@@ -22,7 +22,7 @@ for building and installing system-wide, or
 
 for building and installing in directory $HOME/haskell-modules.
 
-Just import module "Rdtsc.Rdtsc" into your Haskell file and use
+Just import module "System.CPUTime.Rdtsc" into your Haskell file and use
 
   ghc --make FILENAME
 

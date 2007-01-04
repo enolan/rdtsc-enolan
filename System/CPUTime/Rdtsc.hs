@@ -17,7 +17,7 @@
 -- of calling this function:
 --
 -- > module Main where
--- > import Rdtsc.Rdtsc
+-- > import System.CPUTime.Rdtsc
 -- >
 -- > main = do
 -- >   t1 <- rdtsc
