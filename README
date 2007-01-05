@@ -29,7 +29,8 @@ Just import module "System.CPUTime.Rdtsc" into your Haskell file and use
 to compile your program.
 
 The "tests" directory contains a small test program for the module and
-demonstrates its usage.
+demonstrates its usage.  There is also a C version for this test
+program, to test the overheads of Haskell's FFI.
 
 Happy Haskell hacking,
   Martin
