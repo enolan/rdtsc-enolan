@@ -1,4 +1,5 @@
 Name:               rdtsc
+Build-type:         Simple
 Version:            1.1.2
 License:            GPL
 License-file:       COPYING
