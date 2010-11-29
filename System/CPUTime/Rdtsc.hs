@@ -1,10 +1,10 @@
 --------------------------------------------------------------------------
 -- |
 -- Module:     System.CPUTime.Rdtsc
--- Copyright:  (c) 2006-2007 Martin Grabmueller
+-- Copyright:  (c) 2006-2007,2010 Martin Grabmueller
 -- License:    GPL
 -- 
--- Maintainer:  magr@cs.tu-berlin.de
+-- Maintainer:  martin@grabmueller.de
 -- Stability:   provisional
 -- Portability: non-portable (requires IA-32  processor and GHC)
 --

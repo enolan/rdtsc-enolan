@@ -1,11 +1,11 @@
 Name:               rdtsc
 Build-type:         Simple
-Version:            1.1.2
+Version:            1.1.3
 License:            GPL
 License-file:       COPYING
-Author:             Martin Grabmueller <magr@cs.tu-berlin.de>
-Maintainer:         magr@cs.tu-berlin.de
-Homepage:           http://uebb.cs.tu-berlin.de/~magr/projects/rdtsc/doc/
+Author:             Martin Grabmueller <martin@grabmueller.de>
+Maintainer:         martin@grabmueller.de
+Homepage:           http://code.haskell.org/rdtsc
 Category:           Foreign binding
 Synopsis:           Binding for the rdtsc machine instruction
 Description:	    This module provides the function 'rdtsc' for accessing
@@ -21,7 +21,7 @@ Description:	    This module provides the function 'rdtsc' for accessing
 	call this function twice and to compute the difference, whereas in
 	C the overhead is only about 88 cycles.
 Stability:          Experimental
-Build-depends:      base
+Build-depends:      base >= 4
 Exposed-Modules:    System.CPUTime.Rdtsc
 Extensions:         ForeignFunctionInterface
 C-sources:	    cbits/rdtsc.c
