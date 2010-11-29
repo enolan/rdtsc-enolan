@@ -27,4 +27,4 @@ Extensions:         ForeignFunctionInterface
 C-sources:	    cbits/rdtsc.c
 Include-dirs:       cbits
 Install-includes:   rdtsc.h
-ghc-options:        -O -Wall -Werror
+ghc-options:        -Wall
