@@ -12,8 +12,5 @@ main (int argc, char * argv[])
   t2 = rdtsc();
   printf("Cost of rdtsc (function call): %lld\n", t2 - t1, x);
 
-  rdtscll(t1);
-  rdtscll(t2);
-  printf("Cost of rdtsc (macro):         %lld\n", t2 - t1);
   return 0;
 }
