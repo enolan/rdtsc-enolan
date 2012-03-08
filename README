@@ -9,7 +9,7 @@ very accurate timing information.
 ---------------------------------------------------------------------------
 Note: this package contains the file cycle.h by Matteo Frigo, which
 provides access to cycle counters on several architectures.  The
-license for this file is included in the file COPYING in this package.
+license for this file is included in the file LICENSE in this package.
 ----------------------------------------------------------------------------
 
 ** Usage

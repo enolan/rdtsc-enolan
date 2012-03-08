@@ -1,8 +1,8 @@
 Name:               rdtsc
 Build-type:         Simple
-Version:            1.2.0.0
-License:            GPL
-License-file:       COPYING
+Version:            1.3.0.0
+License:            BSD3
+License-file:       LICENSE
 Author:             Martin Grabmueller <martin@grabmueller.de>
 Maintainer:         martin@grabmueller.de
 Homepage:           http://code.haskell.org/rdtsc
