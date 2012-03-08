@@ -29,6 +29,7 @@ Include-dirs:       cbits
 Install-includes:   rdtsc.h, cycle.h
 ghc-options:        -Wall
 extra-source-files:
+        README
 	tests/Makefile
 	tests/test_rdtsc.c
 	tests/TestRdtsc.hs
