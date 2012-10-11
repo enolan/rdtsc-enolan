@@ -1,8 +1,8 @@
 --------------------------------------------------------------------------
 -- |
 -- Module:     System.CPUTime.Rdtsc
--- Copyright:  (c) 2006-2007,2010 Martin Grabmueller
--- License:    GPL
+-- Copyright:  (c) 2006-2007,2010, 2012 Martin Grabmueller & Echo Nolan
+-- License:    BSD3
 -- 
 -- Maintainer:  martin@grabmueller.de
 -- Stability:   provisional
