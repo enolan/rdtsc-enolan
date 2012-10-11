@@ -4,14 +4,14 @@
 -- Copyright:  (c) 2006-2007,2010, 2012 Martin Grabmueller & Echo Nolan
 -- License:    BSD3
 -- 
--- Maintainer:  martin@grabmueller.de
--- Stability:   provisional
--- Portability: non-portable (requires IA-32  processor and GHC)
+-- Maintainer:  echo@echonolan.net
+-- Stability:   experimental
+-- Portability: at own risk. Amd64/linux tested and working.
 --
--- This module provides the function "rdtsc" for accessing the rdtsc
--- machine register on modern IA-32 processors.  This is a 64-bit
--- counter which counts the number of processor cycles since the
--- machine has been powered up.
+-- This module provides the function "rdtsc" for accessing the equivalent of
+-- x86's rdtsc instruction on your processor. To oversimplify quite a bit,
+-- this is the number of clock cycles since bootup. You should generally only
+-- use this as a source of relative time.
 --
 -- As an example, you may use the following program to measure the overhead
 -- of calling this function:
@@ -28,14 +28,4 @@ module System.CPUTime.Rdtsc(rdtsc) where
 
 import Foreign
 
--- | Return the number of clock cycles since the machine this function
--- is called on has been powered up.  Note that the value returned
--- may be inaccurate if the program is run on some hardware
--- virtualization layer.
---
--- Especially on multi-core processors and when using hibernating
--- operating systems, the values returned may be bogus.
---
--- For more information about the @rdtsc@ instruction, see 
--- <http://en.wikipedia.org/wiki/RDTSC>
 foreign import ccall unsafe "rdtsc.h" rdtsc :: IO Word64
