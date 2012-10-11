@@ -21,7 +21,7 @@ Maintainer: Echo Nolan <echo@echonolan.net>
 
 Homepage: http://code.haskell.org/rdtsc
 
-Category: Foreign binding
+Category: Foreign binding, time
 
 Stability: Experimental
 
