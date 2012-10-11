@@ -1,9 +1,9 @@
-Name: rdtsc-safer
+Name: rdtsc-enolan
 Version: 0.0
 Build-type: Simple
 Cabal-version: >= 1.6
 
-Synopsis: binding to sources of high-efficiency, high-precision, monotonically
+Synopsis: Binding to sources of high-efficiency, high-precision, monotonically
     increasing relative time on a variety of architectures
 Description: Haskell binding to sources of high-efficiency, high-precision,
     monotonically increasing relative time. Tested only on amd64 though, so use
