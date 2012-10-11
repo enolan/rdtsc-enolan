@@ -4,7 +4,7 @@ Build-type: Simple
 Cabal-version: >= 1.6
 
 Synopsis: Binding to sources of high-efficiency, high-precision, monotonically
-    increasing relative time on a variety of architectures
+    increasing relative time.
 Description: Haskell binding to sources of high-efficiency, high-precision,
     monotonically increasing relative time. Tested only on amd64 though, so use
     it at your own risk. Most of the credit should go to Matteo Frigo and Martin
